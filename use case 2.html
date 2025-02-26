@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Case Diagram - Quraa Quran Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        svg {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        text {
+            font-size: 14px;
+            fill: #333;
+            text-anchor: middle;
+            dominant-baseline: central;
+        }
+        rect {
+            fill: #e0f7fa;
+            stroke: #0097a7;
+            stroke-width: 2;
+            rx: 8;
+            ry: 8;
+            width: 300px;
+            height: 70px;
+        }
+        line {
+            stroke: #00796b;
+            stroke-width: 2;
+        }
+        .actor {
+            fill: #ffcc80;
+            stroke: #ef6c00;
+        }
+        .use-case {
+            fill: #c8e6c9;
+            stroke: #388e3c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Use Case Diagram - Quraa Quran Website</h1>
+    <svg width="1100" height="850">
+        <!-- Actors aligned horizontally -->
+        <rect x="50" y="50" class="actor" />
+        <text x="200" y="85">User</text>
+
+        <rect x="380" y="50" class="actor" />
+        <text x="530" y="85">Admin</text>
+
+        <rect x="710" y="50" class="actor" />
+        <text x="860" y="85">Educator</text>
+
+        <!-- Use Cases -->
+        <rect x="50" y="200" class="use-case" />
+        <text x="200" y="235">Browse Quran</text>
+
+        <rect x="380" y="200" class="use-case" />
+        <text x="530" y="235">Manage Content</text>
+
+        <rect x="710" y="200" class="use-case" />
+        <text x="860" y="235">Provide Tajweed Lessons</text>
+
+        <rect x="50" y="300" class="use-case" />
+        <text x="200" y="335">Search Ayah/Surah</text>
+
+        <rect x="380" y="300" class="use-case" />
+        <text x="530" y="335">Track User Engagement</text>
+
+        <rect x="50" y="400" class="use-case" />
+        <text x="200" y="435">Listen to Recitation</text>
+
+        <rect x="380" y="400" class="use-case" />
+        <text x="530" y="435">Read Tafsir</text>
+
+        <rect x="50" y="500" class="use-case" />
+        <text x="200" y="535">Bookmark Verses</text>
+
+        <rect x="380" y="500" class="use-case" />
+        <text x="530" y="535">Adjust Display Settings</text>
+
+        <!-- Restored Relationships -->
+        <line x1="200" y1="120" x2="200" y2="200"  />
+        <line x1="530" y1="120" x2="530" y2="200"  />
+        <line x1="860" y1="120" x2="860" y2="200"  />
+
+        <line x1="200" y1="270" x2="200" y2="300"  />
+        <line x1="530" y1="270" x2="530" y2="300"  />
+
+        <line x1="200" y1="370" x2="200" y2="400"  />
+        <line x1="530" y1="370" x2="530" y2="400"  />
+
+        <line x1="200" y1="470" x2="200" y2="500"  />
+        <line x1="530" y1="470" x2="530" y2="500"  />
+    </svg>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WDT - QURAA</title>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            themeVariables: {
+                primaryColor: '#a0c4ff',
+                secondaryColor: '#bdb2ff',
+                tertiaryColor: '#ffafcc',
+                quaternaryColor: '#ffc8dd',
+                edgeLabelBackground: '#ffffff',
+                nodeBorder: '#333333',
+                fontSize: '14px',
+                fontFamily: 'Arial'
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>WDT - QURAA Platform</h1>
+    
+    <h2>Activity Diagram</h2>
+    <div class="mermaid">
+stateDiagram-v2
+    classDef leftNodes fill:#a0c4ff,stroke:#333,stroke-width:2px;
+    classDef rightNodes fill:#ffafcc,stroke:#333,stroke-width:2px;
+    
+    [*] --> UserInputsPreference
+    class UserInputsPreference,SystemProcessesData,DisplayResults,Decision,BookSeat,PayReservation,PrintReceipt,SystemCompletesTask leftNodes;
+    UserInputsPreference --> SystemProcessesData
+    SystemProcessesData --> DisplayResults
+    DisplayResults --> Decision
+    Decision --> BookSeat : "User wants to book"
+    BookSeat --> PayReservation
+    PayReservation --> PrintReceipt
+    PrintReceipt --> SystemCompletesTask
+    
+    Decision --> SaveToFavorites : "User wants to save"
+    SaveToFavorites --> SystemCompletesTask
+    
+    SystemCompletesTask --> [*]
+    
+    [*] --> UserInputsPreference2
+    class UserInputsPreference2,SystemSearches,Decision2,ShowResults,ViewDetails,Choice2,ReserveSeat,SaveLocation rightNodes;
+    UserInputsPreference2 --> SystemSearches
+    SystemSearches --> Decision2
+    Decision2 --> ShowResults : "Found"
+    Decision2 --> [*] : "Not found"
+    ShowResults --> ViewDetails
+    ViewDetails --> Choice2
+    Choice2 --> ReserveSeat : "Reserve a seat"
+    Choice2 --> SaveLocation : "Save for later"
+    ReserveSeat --> [*]
+    SaveLocation --> [*]
+    </div>
+</body>
+</html>

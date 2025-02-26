@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Case Diagram - QURAA</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        svg {
+            width: 1000px;
+            height: 800px;
+            background: white;
+            border: 1px solid black;
+        }
+        .actor {
+            stroke: black;
+            stroke-width: 2px;
+        }
+        .use-case {
+            fill: lightblue;
+            stroke: black;
+            stroke-width: 2px;
+        }
+        .text {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            text-anchor: middle;
+        }
+    </style>
+</head>
+<body>
+    <svg>
+        <!-- Actors (as stick figures) -->
+        <circle class="actor" cx="100" cy="80" r="20"></circle>
+        <line class="actor" x1="100" y1="100" x2="100" y2="150"></line>
+        <line class="actor" x1="80" y1="120" x2="120" y2="120"></line>
+        <line class="actor" x1="100" y1="150" x2="80" y2="180"></line>
+        <line class="actor" x1="100" y1="150" x2="120" y2="180"></line>
+        <text class="text" x="100" y="200">User</text>
+        
+        <circle class="actor" cx="100" cy="280" r="20"></circle>
+        <line class="actor" x1="100" y1="300" x2="100" y2="350"></line>
+        <line class="actor" x1="80" y1="320" x2="120" y2="320"></line>
+        <line class="actor" x1="100" y1="350" x2="80" y2="380"></line>
+        <line class="actor" x1="100" y1="350" x2="120" y2="380"></line>
+        <text class="text" x="100" y="400">Admin</text>
+        
+        <circle class="actor" cx="100" cy="500" r="20"></circle>
+        <line class="actor" x1="100" y1="520" x2="100" y2="570"></line>
+        <line class="actor" x1="80" y1="540" x2="120" y2="540"></line>
+        <line class="actor" x1="100" y1="570" x2="80" y2="600"></line>
+        <line class="actor" x1="100" y1="570" x2="120" y2="600"></line>
+        <text class="text" x="100" y="620">External Services</text>
+        
+        <!-- Use Cases -->
+        <ellipse class="use-case" cx="300" cy="100" rx="100" ry="30"></ellipse>
+        <text class="text" x="300" y="105">Search Surah/Ayah</text>
+        
+        <ellipse class="use-case" cx="300" cy="200" rx="100" ry="30"></ellipse>
+        <text class="text" x="300" y="205">Play & Control Recitation</text>
+        
+        <ellipse class="use-case" cx="300" cy="300" rx="100" ry="30"></ellipse>
+        <text class="text" x="300" y="305">Select Tafsir & Translation</text>
+        
+        <ellipse class="use-case" cx="300" cy="400" rx="100" ry="30"></ellipse>
+        <text class="text" x="300" y="405">Enable Night Mode</text>
+        
+        <ellipse class="use-case" cx="550" cy="150" rx="100" ry="30"></ellipse>
+        <text class="text" x="550" y="155">Manage Recitations</text>
+        
+        <ellipse class="use-case" cx="550" cy="250" rx="100" ry="30"></ellipse>
+        <text class="text" x="550" y="255">Monitor & Analyze</text>
+        
+        <ellipse class="use-case" cx="550" cy="350" rx="100" ry="30"></ellipse>
+        <text class="text" x="550" y="355">Integrate with Services</text>
+        
+        <!-- Relationships -->
+        <line x1="120" y1="100" x2="220" y2="100" stroke="black" stroke-width="2"></line>
+        <line x1="120" y1="100" x2="220" y2="200" stroke="black" stroke-width="2"></line>
+        <line x1="120" y1="100" x2="220" y2="300" stroke="black" stroke-width="2"></line>
+        <line x1="120" y1="100" x2="220" y2="400" stroke="black" stroke-width="2"></line>
+        
+        <line x1="120" y1="280" x2="470" y2="150" stroke="black" stroke-width="2"></line>
+        <line x1="120" y1="280" x2="470" y2="250" stroke="black" stroke-width="2"></line>
+        
+        <line x1="120" y1="500" x2="470" y2="350" stroke="black" stroke-width="2"></line>
+    </svg>
+</body>
+</html>

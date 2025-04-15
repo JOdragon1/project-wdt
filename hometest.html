@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QURAA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <link rel="stylesheet" href="stylehome.css">
+    <script src="java.js"></script>
+    <!-- الهيدر -->
+    <header class="quran-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-quran"></i>
+                    <span>قراء</span>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="active">الرئيسية</a></li>
+                        <li><a href="mushaf.html">المصحف</a></li>
+                        <li><a href="azkar.html">الأذكار</a></li>
+                        <li><a href="tafseer.html">التفسير</a></li>
+                        <li><a href="profile.html">المحفوظات</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                    <a href="login.html" class="user-btn"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <main>
+        <!-- قسم الهيرو -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1><span class="gold-accent">تَعَلَّمُوا</span> الْقُرْآنَ وَاقْرَءُوهُ</h1>
+                    <p>تصفح واقرأ القرآن الكريم كاملًا مع تفسير الآيات وتلاوات للقراء المشهورين</p>
+                    <div class="hero-buttons">
+                        <a href="mushaf.html" class="primary-btn">ابدأ القراءة الآن</a>
+                        <a href="recitations.html" class="secondary-btn">استمع إلى التلاوات</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/quran-3d.png" alt="مصحف ثلاثي الأبعاد">
+                </div>
+            </div>
+        </section>
+
+        <!-- معرض الصور المصغر -->
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">قراء مشهورون</h2>
+                <div class="gallery-container">
+                    <div class="gallery-slider">
+                        <div class="slide active">
+                            <div class="portrait-frame">
+                                <img src="الشيخ عبدالباسط.jpeg" alt="القارئ الأول" class="portrait-img">
+                                <div class="portrait-info">
+                                    <h3>الشيخ عبد الباسط عبد الصمد</h3>
+                                    <p>تلاوات من سورة البقرة</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="portrait-frame">
+                                <img src="images/reader2.jpg" alt="القارئ الثاني" class="portrait-img">
+                                <div class="portrait-info">
+                                    <h3>الشيخ محمد صديق المنشاوي</h3>
+                                    <p>تلاوات من سورة الرحمن</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="portrait-frame">
+                                <img src="images/reader3.jpg" alt="القارئ الثالث" class="portrait-img">
+                                <div class="portrait-info">
+                                    <h3>الشيخ مشاري العفاسي</h3>
+                                    <p>تلاوات من سورة الكهف</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="prev-btn"><i class="fas fa-chevron-right"></i></button>
+                        <div class="indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                        <button class="next-btn"><i class="fas fa-chevron-left"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الميزات -->
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title">مميزات التطبيق</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>مصحف كامل</h3>
+                        <p>تصفح القرآن الكريم كاملًا مع إمكانية البحث والترجمة</p>
+                        <a href="mushaf.html" class="feature-link">تصفح الآن</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h3>تلاوات متنوعة</h3>
+                        <p>استمع إلى تلاوات لأشهر القراء حول العالم</p>
+                        <a href="recitations.html" class="feature-link">استمع الآن</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bookmark"></i>
+                        </div>
+                        <h3>حفظ التقدم</h3>
+                        <p>احفظ تقدمك في القراءة والحفظ عبر المزامنة السحابية</p>
+                        <a href="profile.html" class="feature-link">أنشئ حساب</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="quran-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن التطبيق</h3>
+                    <p>تلاوة هو تطبيق مصحف إلكتروني متكامل يهدف إلى تسهيل قراءة وحفظ القرآن الكريم</p>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="mushaf.html">المصحف</a></li>
+                        <li><a href="azkar.html">الأذكار</a></li>
+                        <li><a href="tafseer.html">التفسير</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>التواصل الاجتماعي</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> تلاوة - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
